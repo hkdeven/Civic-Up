@@ -18,7 +18,7 @@
 
 		<!-- Message to display if no search results returned -->
 		<div class="col-md-12 nopadding">
-		<h3 ng-if="filteredLinks.length === 0" class="animate-if">No results found for {{ search }}</h3>
+		<h3 ng-if="filteredLinks.length === 0" class="animate-if">No results found for "{{ search }}"</h3>
 		<br><br>
 
 		<div class="row">
@@ -101,10 +101,8 @@
 												</span>
 											</p>
 											<p>
-												<a href="{{ link.url }}" target="_blank">
 													<!-- <span class="glyphicon glyphicon-link"></span> -->
 													{{ link.url }}
-												</a>
 											</p>
 										</div>
 									</div>

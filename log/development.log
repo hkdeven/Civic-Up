@@ -16955,3 +16955,437 @@ Processing by LinksController#index as JSON
   [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 2]]
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 35ms (Views: 16.5ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:05:40 -0400
+Processing by AngularController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (115.1ms)
+Completed 200 OK in 241ms (Views: 240.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e9ad6b36607765dd481d4442d823659c.css?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/angular-devise/lib/devise-de70320fd9b922a2df1da0078c7b0774.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/angular-animate/angular-animate-f4fe10d9b10db83fe83ff5da95897fb1.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap-6c809fa05920e6835f19281f0a6f55e1.css?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/angular/angular-01f8300d235daf94699488f22cfe8d67.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/angular-rails-templates-5d0fa302bec8d178392c7b2d3be9bae2.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router-c112f10df17d6a2c9702fe15e93e0f3e.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/d3/d3-fc29122beb82bcc278ea2897a99e3418.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/foo-92bc40d24aa8dff7b55faa295e9766ae.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/app-bbf56c94e14454045dfe7feef0a8231f.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/auth/_login-0985f94a212c0ff8c74793b4b5545aae.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/auth/_profile-2747b6507a860fec31e4140effb1b37f.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/auth/_register-a90cab23d1ff6eb232531f25de887821.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/auth/authCtrl-7b6a3d78abb4676facd03854f15d487f.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/home/_addlink-8449c67f04e4c5d2d63f08f778eeb591.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/home/_home-d0b5aca3c7aedd9590bb6de5ecbdb7e1.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/home/mainCtrl-d7a56241438b936531bb4f986bc88eec.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/links/_links-9a369d585d98d87deb4f19ea9479de68.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/links/links-3bf7590525add5171333f5f2bb288a23.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/links/linksCtrl-f665ecc57e71be0d010b421582dca3d6.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/nav/navCtrl-54105542b5a364e45dc5ea3b8de40ecd.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/pages/_about-032cfa94566073fb4c569bc65aae8e43.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/pages/pagesCtrl-51cc96b0f8fcf527e665652acd6cd5fa.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/pages/_contact-015163b874a65ebbe00103b5d2bab9ac.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started GET "/assets/application-85dd022fe3bed1058bcac8af7e86f314.js?body=1" for ::1 at 2016-06-20 18:05:41 -0400
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 18:05:42 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 201 Created in 18ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 18:05:42 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+  [1m[36mUser Load (9.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 201 Created in 35ms (Views: 1.2ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 18:05:42 -0400
+Processing by LinksController#index as JSON
+  [1m[35mLink Load (1.0ms)[0m  SELECT "links".* FROM "links"
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 33ms (Views: 17.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/assets/civicup-logo-128-46dd4fa903c7f2663e0151e451d71753.png" for ::1 at 2016-06-20 18:05:42 -0400
+
+
+Started GET "/links/2.json" for ::1 at 2016-06-20 18:09:35 -0400
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mLink Load (1.5ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 29ms (Views: 6.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:09:38 -0400
+Processing by AngularController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (302.0ms)
+Completed 200 OK in 419ms (Views: 418.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap-6c809fa05920e6835f19281f0a6f55e1.css?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/application-e9ad6b36607765dd481d4442d823659c.css?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/angular-animate/angular-animate-f4fe10d9b10db83fe83ff5da95897fb1.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/angular/angular-01f8300d235daf94699488f22cfe8d67.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/angular-rails-templates-5d0fa302bec8d178392c7b2d3be9bae2.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/angular-devise/lib/devise-de70320fd9b922a2df1da0078c7b0774.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router-c112f10df17d6a2c9702fe15e93e0f3e.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/d3/d3-fc29122beb82bcc278ea2897a99e3418.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/foo-92bc40d24aa8dff7b55faa295e9766ae.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/app-bbf56c94e14454045dfe7feef0a8231f.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/auth/_login-0985f94a212c0ff8c74793b4b5545aae.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/auth/_profile-2747b6507a860fec31e4140effb1b37f.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/links/_links-ba69b7f7360908723ebbb1776268bb99.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/auth/_register-a90cab23d1ff6eb232531f25de887821.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/home/_addlink-8449c67f04e4c5d2d63f08f778eeb591.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/home/_home-d0b5aca3c7aedd9590bb6de5ecbdb7e1.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/auth/authCtrl-7b6a3d78abb4676facd03854f15d487f.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/home/mainCtrl-d7a56241438b936531bb4f986bc88eec.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/links/links-3bf7590525add5171333f5f2bb288a23.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/links/linksCtrl-f665ecc57e71be0d010b421582dca3d6.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/nav/navCtrl-54105542b5a364e45dc5ea3b8de40ecd.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/pages/_about-032cfa94566073fb4c569bc65aae8e43.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/pages/_contact-015163b874a65ebbe00103b5d2bab9ac.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/pages/pagesCtrl-51cc96b0f8fcf527e665652acd6cd5fa.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started GET "/assets/application-5a9bdc69938e82a302f838935bfeb695.js?body=1" for ::1 at 2016-06-20 18:09:39 -0400
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 18:09:40 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 201 Created in 17ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 18:09:40 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 201 Created in 24ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/links/2.json" for ::1 at 2016-06-20 18:09:40 -0400
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mLink Load (0.6ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.8ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 24ms (Views: 8.1ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 18:09:50 -0400
+Processing by LinksController#index as JSON
+  [1m[35mLink Load (0.7ms)[0m  SELECT "links".* FROM "links"
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 49ms (Views: 32.6ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/civicup-logo-128-46dd4fa903c7f2663e0151e451d71753.png" for ::1 at 2016-06-20 18:09:50 -0400
+
+
+Started GET "/links/1.json" for ::1 at 2016-06-20 18:09:54 -0400
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mLink Load (3.9ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 34ms (Views: 11.2ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 18:14:29 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (0.5ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 31ms (Views: 16.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:14:31 -0400
+Processing by AngularController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (271.7ms)
+Completed 200 OK in 435ms (Views: 434.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home/_home-259f21a43fbf37cc4933fad39ec45d0f.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/angular/angular-01f8300d235daf94699488f22cfe8d67.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/angular-animate/angular-animate-f4fe10d9b10db83fe83ff5da95897fb1.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/application-1f34a33105e672d3ad44c9ce79aa181a.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/application-e9ad6b36607765dd481d4442d823659c.css?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap-6c809fa05920e6835f19281f0a6f55e1.css?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/angular-devise/lib/devise-de70320fd9b922a2df1da0078c7b0774.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/angular-rails-templates-5d0fa302bec8d178392c7b2d3be9bae2.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router-c112f10df17d6a2c9702fe15e93e0f3e.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/d3/d3-fc29122beb82bcc278ea2897a99e3418.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/foo-92bc40d24aa8dff7b55faa295e9766ae.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/app-bbf56c94e14454045dfe7feef0a8231f.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/auth/_login-0985f94a212c0ff8c74793b4b5545aae.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/auth/_profile-2747b6507a860fec31e4140effb1b37f.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/auth/_register-a90cab23d1ff6eb232531f25de887821.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/auth/authCtrl-7b6a3d78abb4676facd03854f15d487f.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/home/_addlink-8449c67f04e4c5d2d63f08f778eeb591.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/home/mainCtrl-d7a56241438b936531bb4f986bc88eec.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/links/_links-ba69b7f7360908723ebbb1776268bb99.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/links/links-3bf7590525add5171333f5f2bb288a23.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/links/linksCtrl-f665ecc57e71be0d010b421582dca3d6.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/nav/navCtrl-54105542b5a364e45dc5ea3b8de40ecd.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/pages/_about-032cfa94566073fb4c569bc65aae8e43.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/pages/_contact-015163b874a65ebbe00103b5d2bab9ac.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started GET "/assets/pages/pagesCtrl-51cc96b0f8fcf527e665652acd6cd5fa.js?body=1" for ::1 at 2016-06-20 18:14:32 -0400
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 18:14:33 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 201 Created in 19ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 18:14:33 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 201 Created in 53ms (Views: 1.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 18:14:33 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (0.6ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  [1m[35mUser Load (1.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 37ms (Views: 19.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/civicup-logo-128-46dd4fa903c7f2663e0151e451d71753.png" for ::1 at 2016-06-20 18:14:33 -0400
+
+
+Started GET "/links/2.json" for ::1 at 2016-06-20 18:14:39 -0400
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mLink Load (1.8ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (5.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (3.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 39ms (Views: 9.4ms | ActiveRecord: 11.3ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 18:14:40 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (2.7ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (1.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 47ms (Views: 23.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/links/2.json" for ::1 at 2016-06-20 18:14:42 -0400
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[36mLink Load (0.5ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 2]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 8.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 18:14:45 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (0.5ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (1.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 40ms (Views: 18.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/links/1.json" for ::1 at 2016-06-20 18:14:48 -0400
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[36mLink Load (0.6ms)[0m  [1mSELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 26ms (Views: 8.5ms | ActiveRecord: 1.5ms)
