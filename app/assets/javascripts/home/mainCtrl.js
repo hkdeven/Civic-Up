@@ -1,13 +1,13 @@
-uplearnApp.controller('MainCtrl',[
-	'$scope', 
+civicupApp.controller('MainCtrl',[
+	'$scope',
 	'links',
 	'$location',
 	'$state',
 	'AuthService',
-	function($scope, links, $location,$state,AuthService){	
-		
+	function($scope, links, $location,$state,AuthService){
+
 		window.myscope = $scope;
-		
+
 		$scope.links = links.links;
 		$scope.groupedLinks = links.groupedLinks;
 
@@ -18,9 +18,9 @@ uplearnApp.controller('MainCtrl',[
 				title: $scope.title,
 				body: $scope.body,
 				url: $scope.url,
-				upvotes: 0 
+				upvotes: 0
 			});
-			
+
 			$scope.title = "Title";
 			$scope.body = "Body";
 			$scope.url = "Url";

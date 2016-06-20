@@ -1,4 +1,4 @@
-uplearnApp.controller('AuthCtrl',[
+civicupApp.controller('AuthCtrl',[
 	'$scope',
 	'$state',
 	'Auth',
@@ -17,6 +17,6 @@ uplearnApp.controller('AuthCtrl',[
 				$state.go('home');
 			});
 		};
-		
+
 	}
 ]);

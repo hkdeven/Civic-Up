@@ -1,6 +1,6 @@
-var uplearnApp = angular.module('uplearn',['ui.router','templates','Devise','ngAnimate']);
+var civicupApp = angular.module('civicup',['ui.router','templates','Devise','ngAnimate']);
 
-uplearnApp.config([
+civicupApp.config([
 	'$stateProvider',
 	'$urlRouterProvider',
 	function($stateProvider,$urlRouterProvider){
@@ -83,12 +83,12 @@ uplearnApp.config([
 
 
 
-uplearnApp.factory('AuthService',
+civicupApp.factory('AuthService',
 	function(){
 		var currentUser;
 
 		return {
-			currentUser: function(){ 
+			currentUser: function(){
 				return "Auth Service is working!";
 			}
 		}
@@ -96,22 +96,18 @@ uplearnApp.factory('AuthService',
 );
 
 // this factory does not work, because injecting 'Auth' here creates a circular reference I believe
-// uplearnApp.factory('AuthService',[
+// civicupApp.factory('AuthService',[
 // 	'Auth',
 // 	function(Auth){
 // 		var currentUser;
 
 // 		return {
-// 			currentUser: function(){ 
+// 			currentUser: function(){
 // 				return "Auth Service is working!";
 // 				// return Auth.currentUser().then(function(user){
 // 				// 	return user;
-// 				// }); 
+// 				// });
 // 			}
 // 		}
 // 	}
 // ]);
-
-
-
-

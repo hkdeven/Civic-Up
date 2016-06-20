@@ -1,40 +1,42 @@
 <div class="container">
 
-	<div class="row">
-		<h3>{{ link.data.title }}</h3>
-		<p>{{ link.data.body }}</p>
-		<p>
-			<a href="{{ link.data.url }}" target="_blank">
-				<!-- <span class="glyphicon glyphicon-link"></span> -->
-				{{ link.data.url }}
-			</a>
-		</p>
-	</div>
+		<div class="row">
+			<div class="col-md-12 nopadding text-center">
+				<h3>{{ link.data.title }}</h3>
+				<p>{{ link.data.body }}</p>
+				<p><a href="{{ link.data.url }}" target="_blank">
+						<!-- <span class="glyphicon glyphicon-link"></span> -->
+				{{ link.data.url }}</a>
+				</p>
+			</div>
+		</div>
 
-	<div class="row">
-			<div ng-repeat="comment in link.data.comments">
-				<ul class="list-group">
-					<li class="list-group-item-custom">
-							<p>{{ comment.body }}</p>
-							<small>by {{ comment.user.username }}</small>
-					</li>
-				</ul>
+		<div class="row">
+			<div class="col-md-12 nopadding text-center">
+				<div ng-repeat="comment in link.data.comments">
+					<ul class="list-group">
+						<li class="list-group-item-custom">
+								<p>{{ comment.body }}</p>
+								<small>by {{ comment.user.username }}</small>
+						</li>
+					</ul>
+				</div>
 			</div>
 
-		<div class="col-sm-7 col-offset-2">
-			<form ng-submit="addComment()" style="margin-top: 30px;">
-				<div class="form-group">
-					<h5>Have your say:</h5>
-					<div class="input-group">
-						<input type="text" class="form-control" ng-model="body" placeholder="Comment">
-						<span class="input-group-btn">
-							<button type="submit" class="btn btn-default">Comment</button>
-						</span>
+		<!-- Form -->
+			<div class="col-sm-7 col-offset-2">
+				<form ng-submit="addComment()" style="margin-top: 30px;">
+					<div class="form-group">
+						<h5>Have your say:</h5>
+						<div class="input-group">
+							<input type="text" class="form-control" ng-model="body" placeholder="Comment">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-default">Comment</button>
+							</span>
+						</div>
 					</div>
-				</div>
-				
-			</form>
-		
+				</form>
+
 		</div>
 	</div>
 

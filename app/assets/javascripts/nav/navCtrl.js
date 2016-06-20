@@ -1,4 +1,4 @@
-uplearnApp.controller('NavCtrl',[
+civicupApp.controller('NavCtrl',[
 	'$scope',
 	'Auth',
 	'$state',
@@ -41,7 +41,7 @@ uplearnApp.controller('NavCtrl',[
 		Auth.currentUser().then(function(user){
 
 			// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-			// md5 to get gravatar 
+			// md5 to get gravatar
 			// code from http://jquerymy.com/js/md5.js
 			var md5 = function(){function e(e,t){var o=e[0],u=e[1],a=e[2],f=e[3];o=n(o,u,a,f,t[0],7,-680876936);f=n(f,o,u,a,t[1],
 				12,-389564586);a=n(a,f,o,u,t[2],17,606105819);u=n(u,a,f,o,t[3],22,-1044525330);o=n(o,u,a,f,t[4],7,-176418897);f=n(f,o,u,a,t[5],

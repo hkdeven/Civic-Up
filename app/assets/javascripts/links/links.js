@@ -1,5 +1,5 @@
-uplearnApp.factory('links',['$http',function($http){
-	
+civicupApp.factory('links',['$http',function($http){
+
 	var o = {
 		links: [],
 		groupedLinks: []
@@ -7,12 +7,12 @@ uplearnApp.factory('links',['$http',function($http){
 
 	o.getAll = function(){
 		var abc = $http.get('/links.json').success(function(data){
-			
+
 			var dates = []; // empty array to store link dates
 			var groupedLinks = [];  // empty array to store links grouped by dates
 
 			for (var i = 0; i < data.length; i++){
-				
+
 				// create a formatted version of date for display
 				data[i].created_at_formatted = new Date(data[i].created_at).toDateString();
 				data[i].time_submitted = new Date(data[i].created_at)
@@ -35,7 +35,7 @@ uplearnApp.factory('links',['$http',function($http){
 			// put the link objects into arrays based on date, then into one single group object with dates
 			for (var i = 0; i < unique_dates.length; i++){
 				var innerArray = [];
-				var tempGroup = {}; 
+				var tempGroup = {};
 				for (var j = 0; j < data.length; j++){
 					if (data[j].created_at.slice(0,10) === unique_dates[i].slice(0,10)) {
 						innerArray.push(data[j]);

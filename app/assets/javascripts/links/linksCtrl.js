@@ -1,4 +1,4 @@
-uplearnApp.controller('LinksCtrl',[
+civicupApp.controller('LinksCtrl',[
 	'$scope',
 	'links',
 	'linkPromise',

@@ -1,23 +1,30 @@
 <br><div class="container">
 	<div class="row">
-		<h3>Submit link to UpLearn</h3>
-		<br>
+		<div class="col-md-12 nopadding text-center">
+			<h3>Propose New Community Initiative</h3>
+			<p>Have an idea to improve your community?  Fill out the form below and spread the word and you idea may become a reality!
+		</div>
+
+		<div class="divider-dynamic"></div>
+
 		<div class="col-md-6">
+			<!-- New initiative form -->
 			<form ng-submit="addLink()">
 				<div class="form-group">
-					<label>Title:</label>
+					<label>TITLE</label>
 					<input type="text" ng-model="title" class="form-control" placeholder="Title">
 				</div>
 				<div class="form-group">
-					<label>Url:</label>
-					<input type="text" ng-model="url" class="form-control" placeholder="Url">
+					<label>THE PROBLEM</label>
+					<input type="text" ng-model="url" class="form-control" placeholder="In one sentence, describe the problem this initiative addresses.">
 				</div>
 				<div class="form-group">
-					<label>Description:</label>
-					<textarea ng-model="body" class="form-control" placeholder="Title"></textarea>
+					<label>YOUR IDEA</label>
+					<textarea ng-model="body" class="form-control" placeholder="Describe the solution you're proposing."></textarea>
 				</div>
 				<button type="submit" class="btn btn-default">Post</button>
 			</form>
+
 		</div>
 	</div>
 </div>

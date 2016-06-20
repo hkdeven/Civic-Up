@@ -1,4 +1,4 @@
-uplearnApp.controller('PagesCtrl',[
+civicupApp.controller('PagesCtrl',[
 	'$scope',
 	'links',
 	'$stateParams',
