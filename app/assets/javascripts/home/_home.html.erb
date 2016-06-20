@@ -38,7 +38,7 @@
 						<div class="panel panel-default">
 							<div class="panel-body">
 								<div class="col-xs-8 col-sm-8 col-md-10">
-									<h4 class="margin-special">{{ link.title }}</h4>
+									<h4 class="margin-special">{{ link.title | uppercase }}</h4>
 
 									<!-- Refactor this $$state.value section of the code -->
 									<!-- <span ng-if="loggedInUser.$$state.value.username === link.user.username">
@@ -84,7 +84,7 @@
 									<div ng-show="hiddenDiv">
 										<div class="jumbotron" ng-click="showLink(link)">
 											<!-- <a href="#/links/{{$index}}">details</a> -->
-											<h2><!-- <span class="glyphicon glyphicon-bookmark"></span> --> {{ link.title }}</h2>
+											<h2><!-- <span class="glyphicon glyphicon-bookmark"></span> --> {{ link.title | uppercase }}</h2>
 											<p>{{ link.body }}</p>
 											<!-- <p>Shared by <a ng-ref="#/users/{{ link.user.username }}">{{ link.user.username }}</p> -->
 											<!-- Refactor this section of the code -->
