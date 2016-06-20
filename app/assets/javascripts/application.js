@@ -3,6 +3,7 @@
 //= require angular-devise
 //= require angular-rails-templates
 //= require angular-ui-router
+//= bootstrap
 //= require d3
 //= require foo
 //= require_tree .
