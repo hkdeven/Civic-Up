@@ -1,18 +1,17 @@
 <div class="container">
 
 		<div class="row">
-			<div class="col-md-12 nopadding text-center">
+			<div class="col-md-12 nopadding">
 				<h3>{{ link.data.title }}</h3>
 				<p>{{ link.data.body }}</p>
-				<p><a href="{{ link.data.url }}" target="_blank">
-						<!-- <span class="glyphicon glyphicon-link"></span> -->
-				{{ link.data.url }}</a>
+				<p><!-- <span class="glyphicon glyphicon-link"></span> -->
+				{{ link.data.url }}
 				</p>
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-md-12 nopadding text-center">
+			<div class="col-md-12 nopadding">
 				<div ng-repeat="comment in link.data.comments">
 					<ul class="list-group">
 						<li class="list-group-item-custom">
@@ -27,7 +26,7 @@
 			<div class="col-sm-7 col-offset-2">
 				<form ng-submit="addComment()" style="margin-top: 30px;">
 					<div class="form-group">
-						<h5>Have your say:</h5>
+						<h5>LEAVE A COMMENT</h5>
 						<div class="input-group">
 							<input type="text" class="form-control" ng-model="body" placeholder="Comment">
 							<span class="input-group-btn">
