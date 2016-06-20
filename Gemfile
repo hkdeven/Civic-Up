@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'active_model_serializers' 
+gem 'active_model_serializers'
 gem 'angular-rails-templates'
 gem 'bower-rails'
 gem 'rails', '4.2.6'
