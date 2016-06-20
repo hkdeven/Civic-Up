@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'active_model_serializers' 
 gem 'angular-rails-templates'
 gem 'bower-rails'
 gem 'rails', '4.2.6'
@@ -11,11 +12,14 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-# gem 'bcrypt', '~> 3.1.7'
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails', '~> 3.1.0'
+end
+
+group :test do
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
 end
 
 group :development do
