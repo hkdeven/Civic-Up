@@ -1,91 +1,414 @@
-
-
-Started GET "/" for ::1 at 2016-06-20 08:34:07 -0400
-
-ActiveRecord::NoDatabaseError (FATAL:  database "civic-voting_development" does not exist
-):
-  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
-  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
-  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
-  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
-  activerecord (4.2.6) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:438:in `new_connection'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:448:in `checkout_new_connection'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
-  /usr/local/Cellar/ruby/2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
-  /usr/local/Cellar/ruby/2.3.0/lib/ruby/2.3.0/monitor.rb:214:in `mon_synchronize'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
-  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:571:in `retrieve_connection'
-  activerecord (4.2.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
-  activerecord (4.2.6) lib/active_record/connection_handling.rb:87:in `connection'
-  activerecord (4.2.6) lib/active_record/migration.rb:383:in `connection'
-  activerecord (4.2.6) lib/active_record/migration.rb:370:in `call'
-  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
-  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
-  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
-  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
-  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
-  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
-  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
-  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
-  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
-  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
-  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
-  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
-  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
-  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
-  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
-  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
-  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
-  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
-  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
-  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
-  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
-  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
-  railties (4.2.6) lib/rails/engine.rb:518:in `call'
-  railties (4.2.6) lib/rails/application.rb:165:in `call'
-  rack (1.6.4) lib/rack/lock.rb:17:in `call'
-  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
-  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
-  /usr/local/Cellar/ruby/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
-  /usr/local/Cellar/ruby/2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
-  /usr/local/Cellar/ruby/2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
-
-
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.4ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.2ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (104.0ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (208.3ms)
-  [1m[36m (23.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
-  [1m[35m (4.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
-  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-
-
-Started GET "/" for ::1 at 2016-06-20 08:34:35 -0400
-Processing by Rails::WelcomeController#index as HTML
-  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/railties-4.2.6/lib/rails/templates/rails/welcome/index.html.erb (0.9ms)
-Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms)
-  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Migrating to CreateEmployees (20160620124943)
-  [1m[35m (0.8ms)[0m  BEGIN
-  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
-Migrating to CreateEmployees (20160620124943)
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLinks (20150630181130)
   [1m[35m (0.2ms)[0m  BEGIN
-  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36m (43.8ms)[0m  [1mCREATE TABLE "links" ("id" serial primary key, "title" character varying, "body" text, "url" character varying, "upvotes" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150630181130"]]
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+Migrating to CreateComments (20150630181227)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (10.0ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" character varying, "upvotes" integer, "link_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::DuplicateTable: ERROR:  relation "comments" already exists
+: CREATE TABLE "comments" ("id" serial primary key, "body" character varying, "upvotes" integer, "link_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateComments (20150630181227)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (4.3ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" character varying, "upvotes" integer, "link_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+PG::DuplicateTable: ERROR:  relation "comments" already exists
+: CREATE TABLE "comments" ("id" serial primary key, "body" character varying, "upvotes" integer, "link_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mSQL (2.9ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (21.5ms)[0m  DROP TABLE "comments" CASCADE
+  [1m[36m (9.7ms)[0m  [1mCREATE TABLE "comments" ("id" serial primary key, "body" character varying, "upvotes" integer, "link_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_comments_on_link_id" ON "comments" USING btree ("link_id")
+  [1m[36m (1.5ms)[0m  [1mCREATE  INDEX  "index_comments_on_user_id" ON "comments" USING btree ("user_id")[0m
+  [1m[35m (2.7ms)[0m  DROP TABLE "links" CASCADE
+  [1m[36m (7.7ms)[0m  [1mCREATE TABLE "links" ("id" serial primary key, "title" character varying, "body" text, "url" character varying, "upvotes" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (2.0ms)[0m  CREATE  INDEX  "index_links_on_user_id" ON "links" USING btree ("user_id")
+  [1m[36m (15.9ms)[0m  [1mDROP TABLE "users" CASCADE[0m
+  [1m[35m (9.5ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp, "username" character varying) 
+  [1m[36m (3.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (1.7ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
+  [1m[36m (2.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_username" ON "users" USING btree ("username")[0m
+  [1m[35m (11.8ms)[0m  ALTER TABLE "comments" ADD CONSTRAINT "fk_rails_cf7ef1d4af"
+FOREIGN KEY ("link_id")
+  REFERENCES "links" ("id")
+
+  [1m[36m (4.6ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (2.5ms)[0m  ALTER TABLE "links" ADD CONSTRAINT "fk_rails_005e9b2a6a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (0.6ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150701175815')
+  [1m[36m (0.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150630181227')[0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150630222300')
+  [1m[36m (0.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150630222332')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150701175750')
+  [1m[36mSQL (1.9ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (32.3ms)[0m  CREATE TABLE "comments" ("id" serial primary key, "body" character varying, "upvotes" integer, "link_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) 
+  [1m[36m (1.7ms)[0m  [1mCREATE  INDEX  "index_comments_on_link_id" ON "comments" USING btree ("link_id")[0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX  "index_comments_on_user_id" ON "comments" USING btree ("user_id")
+  [1m[36m (11.7ms)[0m  [1mCREATE TABLE "links" ("id" serial primary key, "title" character varying, "body" text, "url" character varying, "upvotes" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer) [0m
+  [1m[35m (1.4ms)[0m  CREATE  INDEX  "index_links_on_user_id" ON "links" USING btree ("user_id")
+  [1m[36m (13.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp, "username" character varying) [0m
+  [1m[35m (3.1ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users" USING btree ("email")
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")[0m
+  [1m[35m (1.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_username" ON "users" USING btree ("username")
+  [1m[36m (9.0ms)[0m  [1mALTER TABLE "comments" ADD CONSTRAINT "fk_rails_cf7ef1d4af"
+FOREIGN KEY ("link_id")
+  REFERENCES "links" ("id")
+[0m
+  [1m[35m (3.4ms)[0m  ALTER TABLE "comments" ADD CONSTRAINT "fk_rails_03de2dc08c"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+
+  [1m[36m (12.3ms)[0m  [1mALTER TABLE "links" ADD CONSTRAINT "fk_rails_005e9b2a6a"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35m (4.2ms)[0m  CREATE TABLE "schema_migrations" ("version" character varying NOT NULL) 
+  [1m[36m (2.8ms)[0m  [1mCREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")[0m
+  [1m[35m (1.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150701175815')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150630181130')
+  [1m[36m (0.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150630181227')[0m
+  [1m[35m (0.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150630222300')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150630222332')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150701175750')
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'buckets'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'comments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'links'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.4ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shots'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2016-06-20 10:04:42 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AngularController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (631.5ms)
+Completed 200 OK in 803ms (Views: 782.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e9ad6b36607765dd481d4442d823659c.css?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/angular/angular-01f8300d235daf94699488f22cfe8d67.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/angular-rails-templates-5d0fa302bec8d178392c7b2d3be9bae2.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap-6c809fa05920e6835f19281f0a6f55e1.css?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/angular-animate/angular-animate-f4fe10d9b10db83fe83ff5da95897fb1.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/angular-devise/lib/devise-de70320fd9b922a2df1da0078c7b0774.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router-c112f10df17d6a2c9702fe15e93e0f3e.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/d3/d3-fc29122beb82bcc278ea2897a99e3418.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/foo-92bc40d24aa8dff7b55faa295e9766ae.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/app-b49b3f95c26044cef3d50276feed4d6b.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/auth/_login-eba31f3c5ea98eca30bc34bdbbc2dfcb.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/auth/_profile-c4c094770368221758d1f6500a8a50e0.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/home/_home-70f047a3fccc541e14e2688f11079ff3.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/home/_addlink-d632a7fff079e793fc599275bc851e97.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/auth/authCtrl-2eb2f96d7f08965c98a1714189b7fd04.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/auth/_register-d3c273739a408b06d352a3567025c1f0.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/home/mainCtrl-80b8109df09bea87fd0a923196246fb4.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/links/_links-08ae565401b39f9cf8c96d97ddf6aa44.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/links/links-7ca1046a748399a4fe5e4af9b90887a6.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/links/linksCtrl-ee99fa6a0aefc78cc4abf6c4de0975ab.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/nav/navCtrl-2ab38a6d8e84686485d980ce1c64ffee.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/pages/_about-4338e604020cb7ecdd32504b42a2f181.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/pages/_contact-3d4d5a348afc8123efcef6d863ed605f.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/pages/_jobs-bd12548a6f9b151978a0f30af69f074c.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/pages/pagesCtrl-1620ef1c36ced32b2c1e57033a141c5b.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started GET "/assets/application-16fcbd1ea5a90b58e4b2f8eacfda4538.js?body=1" for ::1 at 2016-06-20 10:04:44 -0400
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 10:04:45 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 10:04:45 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:04:45 -0400
+Processing by LinksController#index as JSON
+  [1m[35mLink Load (1.4ms)[0m  SELECT "links".* FROM "links"
+Completed 200 OK in 53ms (Views: 2.6ms | ActiveRecord: 3.3ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 10:04:49 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 10:04:51 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users.json" for ::1 at 2016-06-20 10:05:08 -0400
+Processing by Devise::RegistrationsController#create as JSON
+  Parameters: {"user"=>{"email"=>"deven@codefll.org", "username"=>"makecodenotwar", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"deven@codefll.org", "username"=>"makecodenotwar", "password"=>"[FILTERED]"}}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (2.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'deven@codefll.org' LIMIT 1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "username", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "deven@codefll.org"], ["encrypted_password", "$2a$10$E/qftTgBtvMR/xej0suz9eMv1sKLh7JO61GzAkQ9oRuiW/MXnFdtC"], ["username", "makecodenotwar"], ["created_at", "2016-06-20 14:05:08.966992"], ["updated_at", "2016-06-20 14:05:08.966992"]]
+  [1m[35m (0.5ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.9ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2016-06-20 14:05:08.972188"], ["current_sign_in_at", "2016-06-20 14:05:08.972188"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2016-06-20 14:05:08.973212"], ["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 174ms (Views: 0.6ms | ActiveRecord: 14.5ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:05:09 -0400
+Processing by LinksController#index as JSON
+  [1m[35mLink Load (0.5ms)[0m  SELECT "links".* FROM "links"
+Completed 200 OK in 14ms (Views: 0.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:05:16 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (0.6ms)[0m  [1mSELECT "links".* FROM "links"[0m
+Completed 200 OK in 20ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/links.json" for ::1 at 2016-06-20 10:06:34 -0400
+Processing by LinksController#create as JSON
+  Parameters: {"title"=>"Community sign-up board", "body"=>"Create an online platform for community to post and upvote civic coding needs.", "url"=>"codefll.org", "upvotes"=>0, "link"=>{"title"=>"Community sign-up board", "body"=>"Create an online platform for community to post and upvote civic coding needs.", "url"=>"codefll.org", "upvotes"=>0}}
+  [1m[35mUser Load (5.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Unpermitted parameter: upvotes
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.3ms)[0m  INSERT INTO "links" ("title", "body", "url", "user_id", "upvotes", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"  [["title", "Community sign-up board"], ["body", "Create an online platform for community to post and upvote civic coding needs."], ["url", "codefll.org"], ["user_id", 1], ["upvotes", 0], ["created_at", "2016-06-20 14:06:34.710950"], ["updated_at", "2016-06-20 14:06:34.710950"]]
+  [1m[36m (0.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+Completed 201 Created in 125ms (Views: 39.7ms | ActiveRecord: 17.9ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:06:34 -0400
+Processing by LinksController#index as JSON
+  [1m[35mLink Load (0.4ms)[0m  SELECT "links".* FROM "links"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 1]]
+Completed 200 OK in 14ms (Views: 4.3ms | ActiveRecord: 1.3ms)
+
+
+Started PUT "/links/1/upvote.json" for ::1 at 2016-06-20 10:06:38 -0400
+Value for params[:comments] was set to nil, because it was one of [], [null] or [null, null, ...]. Go to http://guides.rubyonrails.org/security.html#unsafe-query-generation for more information.
+Processing by LinksController#upvote as JSON
+  Parameters: {"id"=>"1", "title"=>"Community sign-up board", "body"=>"Create an online platform for community to post and upvote civic coding needs.", "url"=>"codefll.org", "upvotes"=>0, "created_at"=>"2016-06-20T14:06:34.710Z", "updated_at"=>"2016-06-20T14:06:34.710Z", "user_id"=>1, "user"=>{"id"=>1, "email"=>"deven@codefll.org", "created_at"=>"2016-06-20T14:05:08.966Z", "updated_at"=>"2016-06-20T14:05:08.973Z", "username"=>"makecodenotwar"}, "comments"=>nil, "created_at_formatted"=>"Mon Jun 20 2016", "time_submitted"=>"10:06 AM", "link"=>{"id"=>"1", "title"=>"Community sign-up board", "body"=>"Create an online platform for community to post and upvote civic coding needs.", "url"=>"codefll.org", "upvotes"=>0, "created_at"=>"2016-06-20T14:06:34.710Z", "updated_at"=>"2016-06-20T14:06:34.710Z", "user_id"=>1}}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLink Load (0.6ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "links" SET "upvotes" = $1, "updated_at" = $2 WHERE "links"."id" = $3  [["upvotes", 1], ["updated_at", "2016-06-20 14:06:38.581730"], ["id", 1]]
+  [1m[36m (1.9ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 18ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/links/1.json" for ::1 at 2016-06-20 10:06:44 -0400
+Processing by LinksController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mLink Load (0.7ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 1]]
+Completed 200 OK in 25ms (Views: 5.4ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/links/1/comments.json" for ::1 at 2016-06-20 10:06:53 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"body"=>"What a great idea!", "link_id"=>"1", "comment"=>{"body"=>"What a great idea!"}}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLink Load (0.4ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "comments" ("body", "user_id", "link_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "What a great idea!"], ["user_id", 1], ["link_id", 1], ["created_at", "2016-06-20 14:06:53.859268"], ["updated_at", "2016-06-20 14:06:53.859268"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 201 Created in 39ms (Views: 5.8ms | ActiveRecord: 4.9ms)
+
+
+Started POST "/links/1/comments.json" for ::1 at 2016-06-20 10:07:10 -0400
+Processing by CommentsController#create as JSON
+  Parameters: {"body"=>"PS - I love this AngularJS front end.  Fancy!", "link_id"=>"1", "comment"=>{"body"=>"PS - I love this AngularJS front end.  Fancy!"}}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLink Load (0.5ms)[0m  SELECT  "links".* FROM "links" WHERE "links"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "comments" ("body", "user_id", "link_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["body", "PS - I love this AngularJS front end.  Fancy!"], ["user_id", 1], ["link_id", 1], ["created_at", "2016-06-20 14:07:10.689509"], ["updated_at", "2016-06-20 14:07:10.689509"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 201 Created in 24ms (Views: 2.4ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:07:14 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (1.0ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.6ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 38ms (Views: 17.9ms | ActiveRecord: 3.2ms)
+
+
+Started DELETE "/users/sign_out.json" for ::1 at 2016-06-20 10:08:12 -0400
+Processing by Devise::SessionsController#destroy as JSON
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Completed 204 No Content in 18ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:08:12 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (0.6ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 21ms (Views: 8.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 10:08:15 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 10:08:30 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{"password"=>"[FILTERED]", "email"=>"deven@codefll.org"}, "session"=>{"user"=>{"password"=>"[FILTERED]", "email"=>"deven@codefll.org"}}}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "deven@codefll.org"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["current_sign_in_at", "2016-06-20 14:08:30.324553"], ["sign_in_count", 2], ["updated_at", "2016-06-20 14:08:30.325792"], ["id", 1]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+Completed 201 Created in 121ms (Views: 0.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:08:30 -0400
+Processing by LinksController#index as JSON
+  [1m[35mLink Load (0.7ms)[0m  SELECT "links".* FROM "links"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (1.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1  [["link_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+Completed 200 OK in 28ms (Views: 11.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/links.json" for ::1 at 2016-06-20 10:08:40 -0400
+Processing by LinksController#index as JSON
+  [1m[36mLink Load (3.3ms)[0m  [1mSELECT "links".* FROM "links"[0m
+  [1m[35mUser Load (4.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (5.9ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."link_id" = $1[0m  [["link_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 50ms (Views: 14.1ms | ActiveRecord: 13.8ms)

@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		
+		<div ng-controller="NavCtrl">
+			<h1>User: {{ user.username }}</h1>
+
+			<p>{{ user.username }} has submitted the following resources:</p>
+
+			<div ng-repeat="link in links | orderBy: '-created_at'">
+				<ul>
+					<!-- the following ng-if means only links for current user show up -->
+					<li ng-if="link.user.username === user.username">
+						<a href="#/links/{{ link.id }}">
+							{{ link.title }}
+						</a> on {{ link.created_at_formatted }}
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+</div>
+

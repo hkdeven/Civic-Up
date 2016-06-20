@@ -1,29 +1,117 @@
-angular.module('flapperNews', [])
-.controller('MainCtrl', [
-'$scope',
-function($scope){
-  $scope.test = 'Hello world!';
+var uplearnApp = angular.module('uplearn',['ui.router','templates','Devise','ngAnimate']);
+
+uplearnApp.config([
+	'$stateProvider',
+	'$urlRouterProvider',
+	function($stateProvider,$urlRouterProvider){
+		$stateProvider
+			.state('home', {
+				url: '/home',
+				templateUrl: 'home/_home.html',
+				controller: 'MainCtrl',
+				resolve: {
+					postPromise: ['links',function(links){
+						return links.getAll();
+					}]
+				}
+			})
+			.state('links',{
+				url: '/links/{id}',
+				templateUrl: 'links/_links.html',
+				controller: 'LinksCtrl',
+				resolve: {
+					linkPromise: ['$stateParams','links',function($stateParams,links){
+						return links.get($stateParams.id);
+						// debugger;
+					}]
+				}
+			})
+			.state('addlink',{
+				url: '/addlink',
+				templateUrl: 'home/_addlink.html',
+				controller: 'MainCtrl'
+			})
+			.state('profile',{
+				url: '/profile/{id}',
+				templateUrl: 'auth/_profile.html',
+				controller: 'MainCtrl',
+				resolve: {
+					postPromise: ['links',function(links){
+						return links.getAll();
+					}]
+				}
+			})
+			.state('about',{
+				url: '/about',
+				templateUrl: 'pages/_about.html',
+				controller: 'PagesCtrl'
+			})
+			.state('contact',{
+				url: '/contact',
+				templateUrl: 'pages/_contact.html',
+				controller: 'PagesCtrl'
+			})
+			.state('jobs',{
+				url: '/jobs',
+				templateUrl: 'pages/_jobs.html',
+				controller: 'PagesCtrl'
+			})
+			.state('login',{
+				url: '/login',
+				templateUrl: 'auth/_login.html',
+				controller: 'AuthCtrl',
+				onEnter: ['$state','Auth',function($state,Auth){
+					Auth.currentUser().then(function(){
+						$state.go('home');
+					})
+				}]
+			})
+			.state('register',{
+				url: '/register',
+				templateUrl: 'auth/_register.html',
+				controller: 'AuthCtrl',
+				onEnter: ['$state','Auth',function($state,Auth){
+					Auth.currentUser().then(function(){
+						$state.go('home');
+					})
+				}]
+			});
+
+		$urlRouterProvider.otherwise('home');
+
 }]);
 
-$scope.posts = [
-  {title: 'post 1', upvotes: 5},
-  {title: 'post 2', upvotes: 2},
-  {title: 'post 3', upvotes: 15},
-  {title: 'post 4', upvotes: 9},
-  {title: 'post 5', upvotes: 4}
-];
 
-$scope.addPost = function(){
-  if(!$scope.title || $scope.title === '') { return; }
-  $scope.posts.push({
-    title: $scope.title,
-    link: $scope.link,
-    upvotes: 0
-  });
-  $scope.title = '';
-  $scope.link = '';
-};
 
-$scope.incrementUpvotes = function(post) {
-  post.upvotes += 1;
-};
+uplearnApp.factory('AuthService',
+	function(){
+		var currentUser;
+
+		return {
+			currentUser: function(){ 
+				return "Auth Service is working!";
+			}
+		}
+	}
+);
+
+// this factory does not work, because injecting 'Auth' here creates a circular reference I believe
+// uplearnApp.factory('AuthService',[
+// 	'Auth',
+// 	function(Auth){
+// 		var currentUser;
+
+// 		return {
+// 			currentUser: function(){ 
+// 				return "Auth Service is working!";
+// 				// return Auth.currentUser().then(function(user){
+// 				// 	return user;
+// 				// }); 
+// 			}
+// 		}
+// 	}
+// ]);
+
+
+
+

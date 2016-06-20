@@ -1,28 +1,31 @@
 source 'https://rubygems.org'
 
-gem 'active_model_serializers'
-gem 'angular-rails-templates'
-gem 'bower-rails'
-gem 'rails', '4.2.6'
-gem 'pg', '~> 0.15'
+gem 'rails', '4.2.2'
+gem 'pg'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+
 group :development, :test do
   gem 'byebug'
-  gem 'rspec-rails', '~> 3.1.0'
+  gem 'web-console', '~> 2.0'
+  gem 'spring'
+  gem 'rspec-rails', '~> 3.3.2'
+  gem 'jasmine-rails'
 end
 
 group :test do
-  gem 'database_cleaner'
-  gem 'factory_girl_rails'
+	gem 'database_cleaner'
+	gem 'factory_girl_rails'
 end
 
-group :development do
-  gem 'web-console', '~> 2.0'
-  gem 'spring'
-end
+gem 'angular-rails-templates'
+gem 'sprockets', '2.12.3'
+gem 'responders', '~> 2.0'
+gem 'angular_rails_csrf'
+gem 'pry-rails'
+
+gem 'devise'
+gem 'rails_12factor', group: :production
