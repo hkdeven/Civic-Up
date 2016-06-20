@@ -12317,3 +12317,108 @@ Completed 200 OK in 50ms (Views: 22.5ms | ActiveRecord: 5.1ms)
 
 
 Started GET "/assets/civicup-logo-128-46dd4fa903c7f2663e0151e451d71753.png" for ::1 at 2016-06-20 12:47:09 -0400
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 12:54:36 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 12:54:38 -0400
+Processing by AngularController#angular as HTML
+  Rendered layouts/application.html.erb within layouts/application (258.6ms)
+Completed 200 OK in 382ms (Views: 381.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/auth/_register-7d0229c8fd6e365a98ee5cdf9de8eb24.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/bootstrap/dist/css/bootstrap-6c809fa05920e6835f19281f0a6f55e1.css?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/angular-animate/angular-animate-f4fe10d9b10db83fe83ff5da95897fb1.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/angular/angular-01f8300d235daf94699488f22cfe8d67.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/application-e9ad6b36607765dd481d4442d823659c.css?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/application-1dcc02323c9d87922012597d266966b7.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/angular-devise/lib/devise-de70320fd9b922a2df1da0078c7b0774.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/angular-rails-templates-5d0fa302bec8d178392c7b2d3be9bae2.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/angular-ui-router/release/angular-ui-router-c112f10df17d6a2c9702fe15e93e0f3e.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/d3/d3-fc29122beb82bcc278ea2897a99e3418.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/foo-92bc40d24aa8dff7b55faa295e9766ae.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/auth/_login-0985f94a212c0ff8c74793b4b5545aae.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/app-bbf56c94e14454045dfe7feef0a8231f.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/auth/_profile-dcb97d23f2c3a040f8c4cfa2b63ae63d.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/auth/authCtrl-7b6a3d78abb4676facd03854f15d487f.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/home/_addlink-8449c67f04e4c5d2d63f08f778eeb591.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/home/_home-0d5d8acd8aa553d64aed5bdfe1557a93.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/home/mainCtrl-d7a56241438b936531bb4f986bc88eec.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/links/_links-9a369d585d98d87deb4f19ea9479de68.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/links/links-3bf7590525add5171333f5f2bb288a23.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/links/linksCtrl-f665ecc57e71be0d010b421582dca3d6.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/nav/navCtrl-54105542b5a364e45dc5ea3b8de40ecd.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/pages/_about-032cfa94566073fb4c569bc65aae8e43.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/pages/_contact-015163b874a65ebbe00103b5d2bab9ac.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started GET "/assets/pages/pagesCtrl-51cc96b0f8fcf527e665652acd6cd5fa.js?body=1" for ::1 at 2016-06-20 12:54:39 -0400
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 12:54:39 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 12:54:39 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in.json" for ::1 at 2016-06-20 12:54:39 -0400
+Processing by Devise::SessionsController#create as JSON
+  Parameters: {"user"=>{}, "session"=>{"user"=>{}}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
